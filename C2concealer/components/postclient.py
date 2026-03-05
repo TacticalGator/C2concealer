@@ -74,7 +74,7 @@ class postClient(object):
 
 		self.id.append('base64')
 		#CUSTOMIZE this prepend value#
-		self.id.append('prepend "__session__id="')
+		self.id.append('prepend "__sid__="')
 		self.id.append('header "Cookie"')
 
 		self.output.append(random.choice(transform.transformations))
@@ -119,7 +119,7 @@ class postClient(object):
 		
 						netbios;
 						base64;
-						prepend="__session__id=";
+						prepend="__sid__=";
 						header "Cookie";
 
 					}
